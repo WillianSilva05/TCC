@@ -31,15 +31,6 @@ function confereUser() {
     Ajustando a formatação do numero de telefone
 */
 
-
-function formatNumber(evento) {
-    const padrao = /[0-9]/
-    var tecla = evento.key
-    if (!padrao.test(tecla)) {
-        return evento.preventDefault()
-    }
-}
-
 function formatNumber(evento) {
     const padrao = /[0-9]/
     var tecla = evento.key

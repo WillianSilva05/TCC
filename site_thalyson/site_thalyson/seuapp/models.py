@@ -29,7 +29,7 @@ class Agendamento(models.Model):
     usuario = models.ForeignKey(Usuario, on_delete = models.CASCADE)
     nome = models.CharField(max_length = 16)
     sobrenome = models.CharField(max_length = 30)
-    celular = models.CharField(max_length = 15)
+    tel = models.CharField(max_length = 15)
     funcionarios = models.CharField(max_length=100, choices=FuncionariosChoices, blank=True, null=True)
     data = models.DateField()
     hora = models.CharField(max_length=100, choices = TIME_CHOICES)

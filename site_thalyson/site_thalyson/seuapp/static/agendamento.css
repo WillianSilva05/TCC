@@ -7,6 +7,10 @@
     --text-color: #fff;
 }
 
+body {
+    height: 160vh !important;
+}
+
 .content {
     justify-content: center !important;
 }
@@ -22,6 +26,8 @@
 }
 
 #servico > div {
+    display: flex;
+    flex-direction: row;
     box-sizing: border-box;
 
     padding: 0 20px;

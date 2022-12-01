@@ -10,35 +10,37 @@
     <title>Registro</title>
   </head>
   <body>
-    <div class="content">
-
-      <div class="left-content">
-
         <form class="form" method="post">
           {% csrf_token %}
-          <div class="form-single">
-            <label class="label">Nome</label>
-            {{agendform.nome}}
-          </div>
           <div>
-            <label class="label">Sobrenome</label>
-            {{agendform.sobrenome}}
+            <div class="form-single">
+              <label class="label">Nome</label>
+              {{agendform.nome}}
+            </div>
+      
+            <div>
+              <label class="label">Data</label>
+              {{agendform.data}}
+            </div>
+            <div>
+              <label class="label">Barbeiro</label>
+              {{agendform.funcionarios}}
+            </div>
           </div>
+
           <div>
-            <label class="label">Data</label>
-            {{agendform.data}}
-          </div>
-          <div>
-            <label class="label">Hora</label>
-            {{agendform.hora}}
-          </div>
-          <div>
-            <label class="label">Nº de telefone</label>
-            {{agendform.celular}}
-          </div>
-          <div>
-            <label class="label">Barbeiro</label>
-            {{agendform.funcionarios}}
+            <div>
+              <label class="label">Sobrenome</label>
+              {{agendform.sobrenome}}
+            </div>
+            <div>
+              <label class="label">Hora</label>
+              {{agendform.hora}}
+            </div>
+            <div>
+              <label class="label">Nº de telefone</label>
+              {{agendform.tel}}
+            </div>
           </div>
 
           
@@ -54,10 +56,6 @@
 
           <button type="submit" class="button">Agendar</button>
 
-        </div>
-      </form>
-
-    </div>
-    
+      </form>    
   </body>
 </html>

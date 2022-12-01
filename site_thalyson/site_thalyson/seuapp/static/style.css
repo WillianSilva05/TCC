@@ -99,8 +99,8 @@ a:hover {
   font-size: 20px;
 
   position: relative;
-  top: -257px;
-  left: 165px;
+  top: -200px;
+  left: 270px;
 
   color: orange;
 }
@@ -123,6 +123,7 @@ a:hover {
   align-items: center;
   flex-direction: row;
   z-index: -1;
+  height: 78vh;
 }
 
 .body-header>div {

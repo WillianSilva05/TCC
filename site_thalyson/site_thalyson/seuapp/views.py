@@ -1,7 +1,4 @@
-import email
-from faulthandler import disable
 from http.client import HTTPResponse
-from operator import truediv
 
 from django.shortcuts import render, redirect, HttpResponse
 from seuapp.forms import UsersForm, AgendamentoForm, LoginForm, ServicosForm
@@ -148,11 +145,9 @@ def agendamento(request):
 		else:
 			data['agendform'] = AgendamentoForm()
 			data['history'] = Agendamento.objects.filter(usuario=request.session['uid'])
-			print(data['history'])
 			return render(request,'agendamento.html',data)
 	except:
 		return redirect("login")
-	return redirect('agendamento')
 
 def edit_agend(request, id):
 	c = Agendamento.objects.get(id=id)

@@ -77,9 +77,9 @@ WSGI_APPLICATION = 'site_thalyson.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'teste',
+        'NAME': 'tcc',
         'USER': 'root',
-        'PASSWORD':'Senai2019,',
+        'PASSWORD':'Wrbds12@',
         'HOST':'localhost',
         'PORT':'3306'
     }

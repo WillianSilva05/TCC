@@ -79,7 +79,7 @@ class AgendamentoForm(ModelForm):
     funcionarios = forms.ChoiceField(choices = FuncionariosChoice)
     class Meta:
         model = Agendamento
-        fields = ['nome', 'sobrenome', 'celular', 'data', 'hora', 'funcionarios']    
+        fields = ['nome', 'sobrenome', 'tel', 'data', 'hora', 'funcionarios']    
 
 class ServicosForm(ModelForm):
     servico = forms.CharField() 

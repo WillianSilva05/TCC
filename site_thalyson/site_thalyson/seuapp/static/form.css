@@ -14,6 +14,18 @@
   --text-color: #fff;
 }
 
+.btn_back {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.btn_back > button{
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -51,7 +63,8 @@ body {
   border-radius: 15px;
 }
 
-.form > div {
+.form > div,
+.form > div > div {
   display: flex;
   flex-direction: column;
 }
@@ -63,7 +76,8 @@ body {
 
 .form > div > input,
 #id_hora,
-#id_funcionarios {
+#id_funcionarios,
+.form > div > div > input {
   width: 250px;
   height: 30px;
   padding: 0 10px;
@@ -102,7 +116,8 @@ body {
   margin: 10px 0 35px 0;
 }
 
-.links > p > a {
+.links > p > a,
+.btn_back > button {
   color: var(--text-link-color);
 }
 
